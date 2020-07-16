@@ -10,9 +10,10 @@ class ChannelButton extends Component {
 	}
 
 	render() {
-		let text = <i class="fas fa-chevron-right"></i>
+		// Заменить на тернарный оператор, избавиться от переменной
+		let text = <i className="fas fa-chevron-right"></i>
 		if(this.props.dir === dir.left)
-			text = <i class="fas fa-chevron-left"></i>
+			text = <i className="fas fa-chevron-left"></i>
 		return(
 			<ThemeContext.Consumer>
 				{({currTheme}) => (
@@ -20,7 +21,14 @@ class ChannelButton extends Component {
 					backgroundColor: theme.pickColor(currTheme, c.dark.main, c.dark.add),
 					color: theme.pickColor(currTheme, c.light.add, c.light.add)
 				}}>
-					<tr className="ch-text">{text}</tr>
+					<tbody>
+
+					<tr className="ch-text">
+						<td>
+							{text}
+						</td>
+					</tr>
+					</tbody>
 				</table>
 				)}
 			</ThemeContext.Consumer>

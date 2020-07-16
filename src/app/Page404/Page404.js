@@ -18,6 +18,7 @@ class Page404 extends Component {
 				{({currTheme}) => (
 					<div id="error-page" style={{color: theme.pickColor(currTheme, c.light.main, c.dark.add)}}>
 						<table id="error-text">
+							{/*не очень понял, зачем тут таблица с одной строкой и одним элементом*/}
 							<tr><td>
 								<div id="error-number">404</div>
 								Страница не найдена

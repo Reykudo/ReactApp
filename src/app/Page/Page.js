@@ -16,6 +16,7 @@ class Page extends Component {
 
 	componentDidMount() {
 		window.scrollTo(window.pageXOffset, 0);
+		// TODO вынести в метод и page вынести в state
 		getPage(this.props.location.pageId).then(response => {
 			this.page = response.data;
 			this.setState({loading: false});

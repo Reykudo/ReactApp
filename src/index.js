@@ -11,14 +11,14 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 class App extends Component {
 
+	// Лучше не объявлять методы как значения в конструкторе, а писать их как методы класса
+	themeChange() {
+		this.setState(state => ({currTheme: state.currTheme === theme.dark ? theme.light : theme.dark}));
+	}
+
 	constructor(props) {
 		super(props);
-
-		this.themeChange = () => {
-			this.setState(state => ({currTheme: state.currTheme === theme.dark ? theme.light : theme.dark}));
-		}
-
-		this.state = {currTheme: theme.dark, themeChange: this.themeChange};
+		this.state = {currTheme: theme.dark, themeChange: this.themeChange.bind(this)/*биндим, чтобы не потерялся контекст*/};
 	}
 
 	render() {

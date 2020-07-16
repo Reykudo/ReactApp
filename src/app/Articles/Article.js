@@ -9,6 +9,7 @@ class Article extends Component {
 	}
 
 	render() {
+		// не лучше ли вынести в state, чем вычислять в рендере? В рендере вообще должно быть минимум логики
 		let width;
 		switch(this.props.type) {
 			case 'cm':

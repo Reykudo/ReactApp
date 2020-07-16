@@ -44,17 +44,21 @@ class Navbar extends Component {
 				<div id="nav" style={{background: bc, padding: pd + 'px', boxShadow: sh}}>
 					<Link to="/" id="nav-a">
 						<table>
-						<tr id="company">
-							<td style={{verticalAlign: 'middle', border: 'none'}}><img id="icon" src={icon}/></td>
-							<td style={{verticalAlign: 'middle', border: 'none'}}>
-								<p id="company-name">journa<span style={{color: c.yellow.main}}>лист</span></p>
-							</td>
-						</tr>
+							<tbody>
+								<tr id="company">
+									<td style={{verticalAlign: 'middle', border: 'none'}}><img id="icon" src={icon}/></td>
+									<td style={{verticalAlign: 'middle', border: 'none'}}>
+										<p id="company-name">journa<span style={{color: c.yellow.main}}>лист</span></p>
+									</td>
+								</tr>
+							</tbody>
+
 						</table>
 					</Link>
 					<ul id="link-list">
 						<ThemeContext.Consumer>
 						{({currTheme, themeChange}) => (
+							// возможно подобное надо выносить в dummy компоненты и переиспользовать по всему проекту
 							<li><button id="theme-button" onClick={themeChange} style={{
 								background: theme.pickColor(currTheme, c.blue.dark, c.blue.light)
 							}}>

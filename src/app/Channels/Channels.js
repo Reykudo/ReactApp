@@ -13,6 +13,7 @@ class Channels extends Component {
 	}
 	
 	componentDidMount() {
+		// вынести в async метод и вызывать его
 		getChannels().then(response => {
 			this.channels = response.data;
 			this.setState({loading: false});

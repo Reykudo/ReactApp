@@ -1,7 +1,7 @@
 ﻿import * as axios from 'axios';
 
-export const getArticles = () => {
-	return axios.get('/articles.php', 
+export const getArticles = async () => {
+	return await axios.get('/articles.php',
 		{
 			method: 'GET',
 			withCredentials: true

@@ -7,7 +7,6 @@ class Menu extends Component {
 		super(props);
 		this.ref = React.createRef();
 		this.bottom = 0;
-		this.scrollDown = this.scrollDown.bind(this);
 	}
 
 	componentDidMount() {
