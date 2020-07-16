@@ -1,0 +1,9 @@
+﻿.Content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 0;
+	width: 100%;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}

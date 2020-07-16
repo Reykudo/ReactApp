@@ -1,0 +1,32 @@
+﻿.one-channel {
+	border-radius: 10px;
+	color: white;
+	width: 20vw;
+	min-width: 200px;
+	height: 100%;
+	min-width: 200px;
+	margin-left: 30px;
+	white-space: normal;
+}
+
+.channel-name {
+	font-size: 35px;
+	padding: 4px;
+	margin: 0;
+	font-weight: 600;
+}
+
+.channel-content {
+	font-size: 20px;
+	padding: 4px;
+	margin: 0;
+	color: #e8e8e8;
+}
+
+.channel-overlay {
+	background-color: #00000080;
+	width: calc(100% - 20px);
+	height: calc(100% - 20px);
+	border-radius: 10px;
+	padding: 10px;
+}

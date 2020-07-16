@@ -1,0 +1,14 @@
+﻿#channels {
+	padding: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#channels-container {
+	display: flex;
+	flex-direction: row;
+	height: 40vh;
+}

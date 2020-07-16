@@ -1,0 +1,57 @@
+﻿.article {
+	justify-content: space-around;
+	background-size: cover;
+	height: 22vw;
+	color: white;
+	outline: 1px solid #333;
+	outline-offset: -1px;
+}
+
+.text-container {
+	display: flex;
+	flex-direction: column;
+	background-color: #000000a0;
+	height: 100%;
+}
+
+.img-container {
+	width: 50%;
+	height: 100%;
+}
+
+.img-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 0 0;
+}
+.article-name {
+	padding: 25px;
+	margin: 0;
+	font-size: 24px;
+	font-weight: 700;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #00000080;
+}
+
+.article-content {
+	padding: 25px;
+	padding-top: 15px;
+	margin: 0;
+	font-size: 20px;
+	text-align: justify;
+	border-radius: 10px;
+	opacity: 0.8;
+	overflow: hidden;
+	padding-bottom: 0px;
+}
+
+.open-text {
+	padding: 25px;
+	font-size: 20px;
+	color: #FFC300;
+}
